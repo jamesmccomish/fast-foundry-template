@@ -5,3 +5,7 @@
 	branch = "0.6.1"
 	path = lib/prb-test
 	url = https://github.com/PaulRBerg/prb-test
+[submodule "lib/solbase"]
+	branch = 'e12d00b'
+	path = lib/solbase
+	url = https://github.com/Sol-Dao/solbase
