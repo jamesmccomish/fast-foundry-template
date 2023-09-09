@@ -9,17 +9,17 @@ abstract contract AddressTestConfig is StdCheats {
     bytes32 internal nextUser = keccak256(abi.encodePacked("user address"));
 
     // Commonly used addresses & private keys
-    address internal alice;
-    address internal bob;
-    address internal carl;
-    address internal dave;
-    address internal eve;
+    address internal immutable alice;
+    address internal immutable bob;
+    address internal immutable carl;
+    address internal immutable dave;
+    address internal immutable eve;
 
-    uint256 internal alicePk;
-    uint256 internal bobPk;
-    uint256 internal carlPk;
-    uint256 internal davePk;
-    uint256 internal evePk;
+    uint256 internal immutable alicePk;
+    uint256 internal immutable bobPk;
+    uint256 internal immutable carlPk;
+    uint256 internal immutable davePk;
+    uint256 internal immutable evePk;
 
     // Some basic addresses
     address internal constant ZERO_ADDRESS = address(0);

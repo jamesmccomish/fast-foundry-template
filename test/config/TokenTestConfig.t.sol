@@ -7,9 +7,9 @@ import { MockERC1155 } from "solbase-test/utils/mocks/MockERC1155.sol";
 
 // Create tokens for tests 
 abstract contract TokenTestConfig { 
-    MockERC20 public mockErc20;
-    MockERC721 public mockErc721;
-    MockERC1155 public mockErc1155;
+    MockERC20 public immutable mockErc20;
+    MockERC721 public immutable mockErc721;
+    MockERC1155 public immutable mockErc1155;
 
     string internal constant MOCK_ERC20_NAME = "MockERC20";
     string internal constant MOCK_ERC20_SYMBOL = "M20";
